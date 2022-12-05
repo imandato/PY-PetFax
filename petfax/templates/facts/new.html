@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <form action="POST">
+    <form action="/facts" method="POST">
         <h1>Submit Facts</h1>
         <p>If you have some fun animal facts you'd like to share, please submit them!</p>
-        <label for="name" id="name-label">Name</label>
-        <input type="text" name="name" id="name">
+        <label for="submitter" id="name-label">Name</label>
+        <input type="text" name="submitter" id="name">
         <label for="fact" id="fact-label">Fact</label>
         <input type="text" name="fact" id="fact">
         <button>Submit the fact</button>
